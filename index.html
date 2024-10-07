@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Level Classifier</title>
+
+    <link rel="stylesheet" href="/src/styles/index.css">
+</head>
+<body class="flex">
+    <main class="flex">
+        <h1>Desafio: <span class="challenge-title highlighted-word">Classificador de Nível de Herói.</span></h1>
+
+        <div class="inputs">
+            <div class="label">
+                <label for="hero-name">Digite o <span class="highlighted-word">Nome</span> do seu Herói: </label>
+                <input type="text" name="hero-name" id="hero-name" placeholder="Digite o nome aqui" autocomplete="off">
+            </div>
+            <div class="label">
+                <label for="hero-level">Digite o <span class="highlighted-word">Nível</span> do seu Herói: (entre 0 a +10000)</label>
+                <input type="text" name="hero-level" id="hero-level" placeholder="Digite o nível aqui" autocomplete="off">
+            </div>
+            <button id="calculate-classifier">Calcular classificação</button>
+        </div>
+
+        <div class="result">
+            <p>O Herói de nome <span  class="highlighted-word" id="result-hero-name">{...}</span> está no nível <span class="highlighted-word" id="result-hero-level">{...}</span>.</p>
+        </div>
+    </main>
+
+    <script src="/src/js/index.js"></script>
+</body>
+</html>

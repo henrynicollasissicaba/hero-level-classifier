@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+    outline: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlighted-word {
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+body{
+    background-color: #d5ffe6;
+    min-height: 100vh;
+}
+
+main {
+    width: min(70rem, 100% - 0.5rem * 2);
+    padding: 3rem 1rem;
+    margin-inline: auto;
+    background-color: #ffffff;
+    border: 2px solid #00c045;
+    flex-direction: column;
+    gap: 3rem;
+    color: #003716;
+}
+
+main h1{
+    text-align: center;
+}
+
+main .challenge-title{
+    display: block;
+    margin-top: .75rem;
+    background-image: linear-gradient(290deg, #70ffa8, #00c045);
+}
+
+main .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.125rem;
+}
+
+.inputs .label{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.label input{
+    width: 12rem;
+    padding: .15rem .25rem;
+    border: 1.5px dashed #003716;
+    border-radius: .25rem;
+}
+
+.label span{
+    background-image: linear-gradient(to left, #2bfd7b, #00c045);
+    font-weight: 700;
+}
+
+.inputs button{
+    width: 10rem;
+    margin-top: 1rem;
+    padding: .5rem .25rem;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #70ffa8;
+    border-radius: .25rem;
+    transition: .2s ease-in-out;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.inputs button:hover{
+    background-color: #70ffa8;
+    color: #ffffff;
+}
+
+.result{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.result span{
+    background-image: linear-gradient(to left, #2bfd7b, #00c045);
+}
+
+@media(max-width: 372px){
+    .inputs .label{
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    main .inputs{
+        gap: 2rem;
+    }
+
+    .inputs button{
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
